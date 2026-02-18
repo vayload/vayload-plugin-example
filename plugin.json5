@@ -1,0 +1,44 @@
+{
+  "name": "vk-plug",
+  "display_name": "vk-plug",
+  "version": "0.1.0",
+  "description": "A Vayload plugin",
+  "license": "MIT",
+  "keywords": [],
+  "tags": [],
+  "homepage": null,
+  "repository": null,
+  "author": "Roma",
+  "contributors": null,
+  "main": "src/init.lua",
+  "engines": {
+    "lua": "5.1",
+    "host": "*"
+  },
+  "dependencies": {},
+  "dev_dependencies": null,
+  "host_dependencies": null,
+  "permissions": {
+    "filesystem": {
+      "scope": "none",
+      "allow": [],
+      "deny": []
+    },
+    "network": {
+      "allow_outbound": [
+        "jsonplaceholder.typicode.com"
+      ],
+      "allow_inbound": false
+    },
+    "limits": {
+      "max_memory_mb": 128,
+      "max_execution_time_ms": 10000,
+      "max_threads": 10
+    }
+  },
+  "config": {
+    "max_file_size": 5242880,
+    "chunk_size": 4096,
+    "retry_attempts": 3
+  }
+}
